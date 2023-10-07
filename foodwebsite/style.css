@@ -1,0 +1,313 @@
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+
+  /* CSS Variables */
+  :root {
+    --navbar-height: 59px;
+  }
+  
+  /* Navigation Bar */
+  #navbar {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    position: sticky;
+    top: 0px;
+    z-index: 22;
+    background-color:transparent;
+  }
+  
+  #navbar::before {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+  }
+  .srch{
+      font-family: 'Times New Roman';
+      width: 200px;
+      height: 40px;
+      background: transparent;
+      border: 1px solid #a963ad;
+      margin-top: 10px;
+      color: #fff;
+      border-right: none;
+      font-size: 16px;
+      float: left;
+      padding: 12px;
+      margin-left:20px;
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px;
+  }
+  /* Navigation Bar: Logo and Image */
+  #logo {
+    margin: 10px 34px;
+  }
+  
+  #logo img {
+    height: 75px;
+    margin: 3px 6px;
+  }
+  
+  /* Navigation Bar: List Styling */
+  
+  #navbar ul {
+    display: inline-flex;
+    margin-left: 133px;
+    text-align: center;
+    gap: 10px;
+    font-family: "Baloo Bhai", cursive;
+  }
+  
+  #navbar ul li {
+    list-style: none;
+    font-size: 19px;
+    margin-left: 12px;
+  }
+  
+  #navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    
+  }
+  
+  #navbar ul li a:hover {
+    color: #7db4e2;
+    background-color: 99px 88px 20px 11px rgb(231 220 220);
+    text-decoration:underline ,overline;
+    box-shadow:0 0 20px aqua;
+  }
+  
+  /* Home Section */
+  #home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #home::before {
+    content: "";
+    position: absolute;
+    background: url("pix.jpg") no-repeat center center/cover;
+    height: 671px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.98;
+    background-size: cover;
+  }
+  
+  #home h1 {
+    color: white;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  #home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: system-ui;
+  }
+  /* Services Section */
+  #services {
+    margin: 0;
+    display: flex;
+    position: relative;
+    background: url("pixi.jpg") no-repeat center center/cover;
+    opacity: 0.98;
+  }
+  #services .box {
+    border: 2px solid rgba(199, 113, 205, 0.505);
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #00000099;
+    margin-bottom: 20px;
+    color: aqua;
+    font-family: ui-serif;
+  }
+  
+  #services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+  }
+  
+  #services .box p {
+    font-family: "Bree Serif", serif;
+  }
+  
+  /* Clients Section */
+  #client-section {
+    position: relative;
+  }
+  
+  #client-section::before {
+    content: "";
+    position: absolute;
+    background: url("../bg.jpg");
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+  }
+  
+  #clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lavender;
+  }
+  
+  .client-item {
+    padding: 34px;
+  }
+  
+  #clients img {
+    height: 124px;
+  }
+  
+  /* Contact Section */
+  #contact {
+    position: relative;
+    color: aqua;
+    font-family: ui-serif;
+  }
+  #contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 99%;
+    background: url("pixu.jpg") no-repeat center center/cover;
+  }
+  #contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    color: aliceblue;
+  }
+  #contact-box input,
+  #contact-box textarea {
+    width: 100%;
+    background-color: #000000ba;
+    padding: 0.5rem;
+    border-radius: 0px 80px 9px 60px;
+    font-size: 1.1rem;
+  }
+  
+  #contact-box form {
+    width: 40%;
+  }
+  
+  #contact-box label {
+    font-size: 1.3rem;
+    font-family: "Bree Serif", serif;
+  }
+  
+  footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+  }
+  
+  /* Utility Classes */
+  .h-primary {
+    font-family: "Bree Serif", serif;
+    font-size: 3.8rem;
+    padding: 12px;
+  }
+  
+  .h-secondary {
+    font-family: inherit;
+    font-size: 2.3rem;
+    padding: 12px;
+    color: aqua;
+  }
+  
+  .btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(117 136 204);
+    color: #ffffff;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 20px 0px 20px 0px;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+  .btn:hover {
+    opacity: 1;
+    background-color: rgb(58 188 106 / 78%);
+    color: rgb(234 229 234);
+    border-radius: 20px 0px 20px 0px;
+    box-shadow: 0 0 10px 2px aqua;
+    transition: 0.4s;
+  }
+  
+  .center {
+    text-align: center;
+    background-color: #000000;
+    color: aqua;
+  }
+  
+  .btn1 {
+    padding: 4px 10px;
+    border: 2px solid white;
+    background-color: rgb(86 112 208);
+    color: white;
+    margin: 8px;
+    font-size: 19px;
+    border-radius: 0px 20px 0px 20px;
+    cursor: pointer;
+    opacity: 0.9;
+    margin-left: 50%;
+  }
+  .btn1:hover {
+    opacity: 1;
+    background-color: rgb(29 173 95 / 78%);
+    color: rgb(234 229 234);
+    transition: 0.4s;
+    border-radius: 20px 0px 20px 0px;
+    box-shadow: 0 0 10px 4px lightgreen;
+  }
+  .btn2 {
+    border: 0px solid white;
+    background-color: rgb(99 110 206);
+    color: white;
+    font-size: 13px;
+    margin-top:10px;
+    width: 110px;
+    height: 41px;
+    border-radius: 0px;
+    cursor: pointer;
+  }
+  .btn2:hover {
+    background-color: rgb(29 173 95 / 78%);
+    color: rgb(234 229 234);
+    transition: 0.5s;
+    border-radius: 2px 10px 2px 10px;
+    box-shadow: 0 0 10px 4px lightgreen;
+  }
+  
